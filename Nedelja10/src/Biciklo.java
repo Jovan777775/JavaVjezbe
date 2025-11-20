@@ -1,0 +1,21 @@
+
+public class Biciklo extends Vozilo implements Ekonomican {
+	
+
+	public Biciklo(String id, double maxBrzina) {
+		super(id, maxBrzina);
+	}
+
+	@Override
+	public double potrosnjaPoKm() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double izracunajVrijemeDostave(double udaljenostKm) {
+		// TODO Auto-generated method stub
+		return udaljenostKm/maxBrzina;
+	}
+
+}
